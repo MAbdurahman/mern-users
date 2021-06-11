@@ -1,0 +1,9 @@
+{
+  "name": "mern-users",
+  "version": "1.0.0",
+  "description": "Simple MERN Stack application",
+  "main": "server.js",
+  "repository": "https://github.com/MAbdurahman/mern-users.git",
+  "author": "Mahdi Abdurrahman <mdbdrrhm@gmail.com>",
+  "license": "MIT"
+}
