@@ -2,10 +2,25 @@
   "name": "mern-users",
   "version": "1.0.0",
   "description": "Simple MERN Stack application",
-  "main": "server.js",
+    "main": "template.js",
+  "scripts": {
+    "development": "SET NODE_ENV=development & nodemon",
+    "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
+    "start": "NODE_ENV=production node ./dist/server.generated.js"
+  },
   "repository": "https://github.com/MAbdurahman/mern-users.git",
+    "keywords": [
+    "MongoDB",
+    "ExpressJS",
+    "ReactJS",
+    "NodeJS",
+    "MERN"
+  ],
   "author": "Mahdi Abdurrahman <mdbdrrhm@gmail.com>",
   "license": "MIT",
+    "nodemonConfig": {
+    "delay": "2000"
+  },
   "devDependencies": {
     "@babel/core": "7.14.5",
     "@babel/preset-env": "7.9.0",
